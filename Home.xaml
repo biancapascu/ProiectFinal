@@ -1,0 +1,15 @@
+﻿<Page x:Class="Proiect.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Proiect"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="990"
+      Title="Home">
+
+    <Grid Background="White">
+        <Image Source="Logo.png" Width="664" Height="522" HorizontalAlignment="Center" Canvas.Top="68" Canvas.Left="96" Margin="134,-36,92.4,-86"/>
+        <TextBox Height="71" Canvas.Left="233" TextWrapping="Wrap" Text="Welcome!" Canvas.Top="165" FontWeight="Bold" FontSize="36" Foreground="White" FontFamily="Georgia" BorderThickness="0" Margin="341,160,381.4,269"/>
+    </Grid>
+</Page>

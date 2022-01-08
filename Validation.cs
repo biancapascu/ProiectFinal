@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Controls;
+
+namespace Proiect
+{
+    //validator pentru camp required
+    public class StringNotEmpty : ValidationRule
+    {
+        //mostenim din clasa ValidationRule
+        //suprascriem metoda Validate ce returneaza un
+        //ValidationResult
+        public override ValidationResult Validate(object value,
+        System.Globalization.CultureInfo cultureinfo)
+        {
+            string aString = value.ToString();
+            if (aString == "")
+                return new ValidationResult(false, "String cannot be empty");
+            return new ValidationResult(true, null);
+        }
+    }
+}
